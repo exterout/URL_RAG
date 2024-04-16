@@ -10,8 +10,6 @@ A simple project to try RAG, using Langchain
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
