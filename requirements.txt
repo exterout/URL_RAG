@@ -1,0 +1,7 @@
+langchain
+streamlit
+unstructured
+python-magic
+python-magic-bin
+scikit-learn
+transformers
