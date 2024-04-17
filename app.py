@@ -97,7 +97,7 @@ if ask:
     with main_placefolder.status(f'thinking {question}'):
         result = qa_chain({"query": question})  
 # with st.status("thinking ...", expanded=False):
-    st.text(result["result"])
+    st.write(result["result"])
 
 #result = qa_chain({"query": question})
 #ans.write(result['result'])
