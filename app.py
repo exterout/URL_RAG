@@ -54,15 +54,13 @@ if processURL_clicked:
     docs = text_splitter.split_documents(data)
 
     #save embeddings
-    persist_path = os.path.join(tempfile.gettempdir(), "union.parquet")
+    
     with st.status("Making embeddings ...", expanded=False):
-        st.image("https://duckduckgo.com/?q=images&iax=images&ia=images&iai=https://wallpapercave.com/wp/wp2599594.jpg&t=ffab&atb=v419-1")
         vector_store = SKLearnVectorStore.from_documents(
            documents=docs,
            embedding=embeddings,
            persist_path=persist_path,  # persist_path and serializer are optional
-           serializer="parquet",
-       )
+           serializer="parquet",)
         vector_store.persist()
 
 
